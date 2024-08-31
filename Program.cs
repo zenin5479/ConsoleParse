@@ -42,7 +42,7 @@ namespace ConsoleParse
          }
       }
 
-      public static void ConvertMethods(string inputString)
+      private static void ConvertMethods(string inputString)
       {
          int n = Convert.ToInt32("23");
          double d = Convert.ToDouble(true);
@@ -52,7 +52,7 @@ namespace ConsoleParse
          Console.WriteLine(outputInteger);
       }
 
-      public static void TryParseMethod(string inputString)
+      private static void TryParseMethod(string inputString)
       {
          if (int.TryParse(inputString, out int outputInteger))
             Console.WriteLine($"Выходное значение: {outputInteger}");
